@@ -1,12 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useState } from 'react';
-import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import UseAxiosSecure from '../../../hooks/UseAxiosSecure';
 import { FaUserShield } from 'react-icons/fa';
 import { FiShieldOff } from 'react-icons/fi';
 import Swal from 'sweetalert2';
 
 const UsersManagement = () => {
-    const axiosSecure = useAxiosSecure();
+    const axiosSecure = UseAxiosSecure();
     const [searchText, setSearchText] = useState('')
 
     const { refetch, data: users = [] } = useQuery({
