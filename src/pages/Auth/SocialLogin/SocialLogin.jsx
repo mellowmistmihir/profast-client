@@ -2,7 +2,7 @@ import React from 'react';
 
 import { useLocation, useNavigate } from 'react-router';
 import UseAxiosSecure from '../../../hooks/UseAxiosSecure';
-import UseAuth from '../../../hooks/useAuth';
+import UseAuth from '../../../hooks/UseAuth';
 
 
 

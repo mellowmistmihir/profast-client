@@ -1,11 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
-import useAuth from '../../../hooks/useAuth';
+import UseAuth from '../../../hooks/UseAuth';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import Swal from 'sweetalert2';
 
 const AssignedDeliveries = () => {
-    const { user } = useAuth();
+    const { user } = UseAuth();
     const axiosSecure = useAxiosSecure();
 
     const { data: parcels = [], refetch } = useQuery({

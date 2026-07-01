@@ -1,5 +1,5 @@
 import React from 'react';
-import useAuth from '../hooks/UseAuth';
+import UseAuth from '../hooks/UseAuth';
 
 import useRole from '../hooks/useRole';
 
@@ -7,7 +7,7 @@ import Loading from '../Component/Loading/Loading';
 import Forbidden from '../Component/Forbidden/Forbidden';
 
 const AdminRoute = ({ children }) => {
-    const { loading } = useAuth();
+    const { loading } = UseAuth();
     const { role, roleLoading } = useRole()
 
     if (loading || roleLoading) {

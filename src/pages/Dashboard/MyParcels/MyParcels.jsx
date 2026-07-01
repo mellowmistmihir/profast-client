@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
-import useAuth from '../../../hooks/useAuth';
+import UseAuth from '../../../hooks/UseAuth';
 
 import { FiEdit } from 'react-icons/fi';
 import { FaMagnifyingGlass, FaTrashCan } from 'react-icons/fa6';
@@ -9,7 +9,7 @@ import { Link } from 'react-router';
 import UseAxiosSecure from '../../../hooks/UseAxiosSecure';
 
 const MyParcels = () => {
-    const { user } = useAuth();
+    const { user } = UseAuth();
     const axiosSecure = UseAxiosSecure();
 
     const { data: parcels = [], refetch } = useQuery({
