@@ -1,11 +1,11 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useRef, useState } from 'react';
-import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import UseAxiosSecure from '../../../hooks/UseAxiosSecure';
 import Swal from 'sweetalert2';
 
 const AssignRiders = () => {
     const [selectedParcel, setSelectedParcel] = useState(null);
-    const axiosSecure = useAxiosSecure();
+    const axiosSecure = UseAxiosSecure();
     const riderModalRef = useRef();
 
     const { data: parcels = [], refetch: parcelsRefetch } = useQuery({

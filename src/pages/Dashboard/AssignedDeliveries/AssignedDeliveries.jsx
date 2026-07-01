@@ -1,12 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 import UseAuth from '../../../hooks/UseAuth';
-import useAxiosSecure from '../../../hooks/useAxiosSecure';
+import UseAxiosSecure from '../../../hooks/UseAxiosSecure';
 import Swal from 'sweetalert2';
 
 const AssignedDeliveries = () => {
     const { user } = UseAuth();
-    const axiosSecure = useAxiosSecure();
+    const axiosSecure = UseAxiosSecure();
 
     const { data: parcels = [], refetch } = useQuery({
         queryKey: ['parcels', user.email, 'driver_assigned'],
